@@ -1,0 +1,78 @@
+{
+  "name": "iPad 专属双应用源（洛雪 + 阅读）",
+  "identifier": "com.haywoodw04.ipad-app-store",
+  "subtitle": "洛雪音乐 & 小浣熊阅读 · iPad 深度适配纯净开源源",
+  "description": "专为 iPad 打造的纯净开源双应用 SideStore / AltStore 应用源，收录经源码安全审计、深度适配 iPad 大屏分屏与外接键盘、由 GitHub Actions 自动编译的未签名版本。每款应用仅占 1 个 App ID，合计 3/3 名额与 4/10 App ID，免 LiveContainer 原生满血运行；不含任何书源、音源或个人数据。",
+  "sourceURL": "https://raw.githubusercontent.com/haywoodw04-jpg/ipad-app-store/main/source.json",
+  "website": "https://github.com/haywoodw04-jpg/ipad-app-store",
+  "iconURL": "https://raw.githubusercontent.com/haywoodw04-jpg/ipad-app-store/main/icons/hub-icon.png",
+  "tintColor": "#2B6CB0",
+  "apps": [
+    {
+      "name": "洛雪音乐",
+      "bundleIdentifier": "cn.toside.music.mobile",
+      "developerName": "haywoodw04-jpg",
+      "subtitle": "开源聚合音乐播放器 · iPad 原生大屏适配版",
+      "localizedDescription": "基于开源项目 lx-music-mobile (ios-adaptation) 深度适配 iPad 的纯净未签名版。支持原生 iPad 四方向全屏、分屏/侧拉/台前调度、横竖屏侧栏与双栏播放页、iPad 缩放优化、按需音频混音开关、FormSheet 音源导入及外接键盘快捷键（空格播停、Cmd+左右切歌）。本应用为纯净播放器空壳，不含任何内置音源、遥测或广告，自定义 JS 音源需自行导入。",
+      "iconURL": "https://raw.githubusercontent.com/haywoodw04-jpg/ipad-app-store/main/icons/lx-music-ipad.png",
+      "tintColor": "#18A058",
+      "category": "entertainment",
+      "versions": [
+        {
+          "version": "1.9.2",
+          "buildVersion": "79",
+          "date": "2026-11-27T00:35:39Z",
+          "localizedDescription": "## LX Music iPad Edition (v1.9.2-ipad.1)\n\nUnsigned arm64 IPA built from source on GitHub Actions (`macos-15`) for iPadOS / iOS sideloading (SideStore / AltStore / TrollStore).\n\n### Artifact Metadata\n- **File**: `lx-music-ipad-v1.9.2-ipad.1-unsigned.ipa`\n- **Bundle ID**: `cn.toside.music.mobile`\n- **Version (`CFBundleShortVersionString`)**: `1.9.2`\n- **Build (`CFBundleVersion`)**: `79`\n- **MinimumOSVersion**: `13.4`\n- **Size (bytes)**: `13113426`\n- **SHA-256**: `bc985c95fb700694abfe82229e5f34699ec502f1ce9034f506c397c93bdc2bbb`\n\n### Key iPad Optimizations\n- Native iPad full-screen & 4-orientation support (`TARGETED_DEVICE_FAMILY = \"1,2\"`, `UIRequiresFullScreen = false`) for Split View, Slide Over, and Stage Manager.\n- Adaptive tablet layout (`isHorizontalMode`) and balanced tablet UI scaling (`pixelRatio`).\n- Removed unused `NSLocationWhenInUseUsageDescription` permission key.\n- Mapped `player.isHandleAudioFocus` to iOS `AVAudioSession` (default exclusive playback preserves Lock Screen `MPNowPlayingInfoCenter` controls; enables `MixWithOthers` only when disabled).\n- iPad `UIModalPresentationFormSheet` document picker & safe hardware keyboard shortcuts (Space / Cmd+Left / Cmd+Right, disabled while typing in text inputs).\n- Automated CI verification: `UIDeviceFamily=[1,2]`, `UIRequiresFullScreen=false`, 0 `.appex`, 0 `_CodeSignature`, 0 `embedded.mobileprovision`.\n\n> This repository contains **no** bundled music sources, personal data, or signing certificates. Based on [lyswhut/lx-music-mobile](https://github.com/lyswhut/lx-music-mobile) and [fansa92/lx-music-mobile](https://github.com/fansa92/lx-music-mobile) under Apache-2.0.",
+          "downloadURL": "https://github.com/haywoodw04-jpg/lx-music-ipad/releases/download/v1.9.2-ipad.1/lx-music-ipad-v1.9.2-ipad.1-unsigned.ipa",
+          "size": 13113426,
+          "minOSVersion": "13.4",
+          "sha256": "bc985c95fb700694abfe82229e5f34699ec502f1ce9034f506c397c93bdc2bbb"
+        }
+      ],
+      "version": "1.9.2",
+      "versionDate": "2026-11-27T00:35:39Z",
+      "versionDescription": "## LX Music iPad Edition (v1.9.2-ipad.1)\n\nUnsigned arm64 IPA built from source on GitHub Actions (`macos-15`) for iPadOS / iOS sideloading (SideStore / AltStore / TrollStore).\n\n### Artifact Metadata\n- **File**: `lx-music-ipad-v1.9.2-ipad.1-unsigned.ipa`\n- **Bundle ID**: `cn.toside.music.mobile`\n- **Version (`CFBundleShortVersionString`)**: `1.9.2`\n- **Build (`CFBundleVersion`)**: `79`\n- **MinimumOSVersion**: `13.4`\n- **Size (bytes)**: `13113426`\n- **SHA-256**: `bc985c95fb700694abfe82229e5f34699ec502f1ce9034f506c397c93bdc2bbb`\n\n### Key iPad Optimizations\n- Native iPad full-screen & 4-orientation support (`TARGETED_DEVICE_FAMILY = \"1,2\"`, `UIRequiresFullScreen = false`) for Split View, Slide Over, and Stage Manager.\n- Adaptive tablet layout (`isHorizontalMode`) and balanced tablet UI scaling (`pixelRatio`).\n- Removed unused `NSLocationWhenInUseUsageDescription` permission key.\n- Mapped `player.isHandleAudioFocus` to iOS `AVAudioSession` (default exclusive playback preserves Lock Screen `MPNowPlayingInfoCenter` controls; enables `MixWithOthers` only when disabled).\n- iPad `UIModalPresentationFormSheet` document picker & safe hardware keyboard shortcuts (Space / Cmd+Left / Cmd+Right, disabled while typing in text inputs).\n- Automated CI verification: `UIDeviceFamily=[1,2]`, `UIRequiresFullScreen=false`, 0 `.appex`, 0 `_CodeSignature`, 0 `embedded.mobileprovision`.\n\n> This repository contains **no** bundled music sources, personal data, or signing certificates. Based on [lyswhut/lx-music-mobile](https://github.com/lyswhut/lx-music-mobile) and [fansa92/lx-music-mobile](https://github.com/fansa92/lx-music-mobile) under Apache-2.0.",
+      "downloadURL": "https://github.com/haywoodw04-jpg/lx-music-ipad/releases/download/v1.9.2-ipad.1/lx-music-ipad-v1.9.2-ipad.1-unsigned.ipa",
+      "size": 13113426,
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "name": "小浣熊阅读",
+      "bundleIdentifier": "com.epiboly.legado",
+      "developerName": "haywoodw04-jpg",
+      "subtitle": "兼容 Legado 书源 · iPad 大屏双页与 WebDAV 加强版",
+      "localizedDescription": "基于开源项目 Aminark/legado-ios 深度适配 iPad 的纯净未签名版。支持原生 iPad 侧边栏导航、EPUB 横屏双页并排阅读、正文最大列宽滑块（600–1000pt）、外接键盘方向键与空格翻页、兼容安卓 Legado 格式的 WebDAV 备份恢复（密码强制加密存储于 iOS Keychain），并默认开启严格 HTTPS 证书校验。本应用不提供或内置任何书源与书库，书源需自行导入。",
+      "iconURL": "https://raw.githubusercontent.com/haywoodw04-jpg/ipad-app-store/main/icons/legado-ipad.png",
+      "tintColor": "#315C50",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "0.1.16",
+          "buildVersion": "31",
+          "date": "2026-11-27T00:27:51Z",
+          "localizedDescription": "## 小浣熊阅读 iPad 专属优化版（`v0.1.16-ipad.1`）\n\n基于开源项目 [Aminark/legado-ios](https://github.com/Aminark/legado-ios)（GPL-3.0）从源码云编译的未签名 arm64 `.ipa`（适用于 SideStore / AltStore / LiveContainer / TrollStore 自签安装）。\n\n### 本次改动摘要\n- **安全加固**：默认开启 HTTPS 证书校验（`ignoreCertificateErrors = false`），保持 0 扩展、0 额外 Entitlement、单一 App ID（`com.epiboly.legado`）。\n- **Android 兼容 WebDAV 备份与恢复**：兼容安卓 Legado `backupYYYY-MM-DD.zip`，支持坚果云 / InfiniCLOUD / 自定义地址，**密码强制加密存于 iOS Keychain**，附带同源重定向防护与 ZIP 边界校验。\n- **外接键盘翻页**：网文/TXT（分页与滚动）与 EPUB 阅读器支持 `←` / `→` / `↑` / `↓` / `Space` 翻页，不劫持输入框。\n- **EPUB 横屏双页**：通过 Readium 3.8 `EPUBPreferences` 支持「自动 / 单页 / 双页」排版（默认自动）。\n- **iPad 大屏适配**：iPadOS 16+ 原生 `NavigationSplitView` 侧边栏（iOS 15 回退 TabView）、自适应书架列数、可调 iPad 正文最大列宽（`600pt ~ 1000pt`）、显式支持分屏与四向旋转。",
+          "downloadURL": "https://github.com/haywoodw04-jpg/legado-ipad/releases/download/v0.1.16-ipad.1/legado-ipad-v0.1.16-ipad.1-unsigned.ipa",
+          "size": 16676844,
+          "minOSVersion": "15.0",
+          "sha256": "9e3a7f4a904f31f900f30d8cb9807249501ba418984e69edfd61341403fd49a6"
+        }
+      ],
+      "version": "0.1.16",
+      "versionDate": "2026-11-27T00:27:51Z",
+      "versionDescription": "## 小浣熊阅读 iPad 专属优化版（`v0.1.16-ipad.1`）\n\n基于开源项目 [Aminark/legado-ios](https://github.com/Aminark/legado-ios)（GPL-3.0）从源码云编译的未签名 arm64 `.ipa`（适用于 SideStore / AltStore / LiveContainer / TrollStore 自签安装）。\n\n### 本次改动摘要\n- **安全加固**：默认开启 HTTPS 证书校验（`ignoreCertificateErrors = false`），保持 0 扩展、0 额外 Entitlement、单一 App ID（`com.epiboly.legado`）。\n- **Android 兼容 WebDAV 备份与恢复**：兼容安卓 Legado `backupYYYY-MM-DD.zip`，支持坚果云 / InfiniCLOUD / 自定义地址，**密码强制加密存于 iOS Keychain**，附带同源重定向防护与 ZIP 边界校验。\n- **外接键盘翻页**：网文/TXT（分页与滚动）与 EPUB 阅读器支持 `←` / `→` / `↑` / `↓` / `Space` 翻页，不劫持输入框。\n- **EPUB 横屏双页**：通过 Readium 3.8 `EPUBPreferences` 支持「自动 / 单页 / 双页」排版（默认自动）。\n- **iPad 大屏适配**：iPadOS 16+ 原生 `NavigationSplitView` 侧边栏（iOS 15 回退 TabView）、自适应书架列数、可调 iPad 正文最大列宽（`600pt ~ 1000pt`）、显式支持分屏与四向旋转。",
+      "downloadURL": "https://github.com/haywoodw04-jpg/legado-ipad/releases/download/v0.1.16-ipad.1/legado-ipad-v0.1.16-ipad.1-unsigned.ipa",
+      "size": 16676844,
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "用于扫描书源和净化规则的导入二维码。",
+          "NSPhotoLibraryAddUsageDescription": "用于保存阅读页面中的图片到照片图库。"
+        }
+      }
+    }
+  ],
+  "news": []
+}
