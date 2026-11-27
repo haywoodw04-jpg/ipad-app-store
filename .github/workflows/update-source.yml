@@ -36,20 +36,23 @@ jobs:
 
       - name: Validate JSON structure
         run: |
-          python3 -c '
+          python3 - <<'PY'
           import json
+
           with open("source.json", encoding="utf-8") as f:
               data = json.load(f)
+
           assert data["identifier"] == "com.haywoodw04.ipad-app-store"
           assert len(data["apps"]) == 2
           for app in data["apps"]:
-              assert app["versions"], f"Missing versions for {app[\"name\"]}"
+              name = app["name"]
+              assert app["versions"], f"Missing versions for {name}"
               v0 = app["versions"][0]
               for key in ("version", "buildVersion", "date", "downloadURL", "size", "minOSVersion", "sha256"):
-                  assert v0.get(key), f"Missing {key} for {app[\"name\"]}"
+                  assert v0.get(key), f"Missing {key} for {name}"
               assert len(v0["sha256"]) == 64
           print("source.json validation passed.")
-          '
+          PY
 
       - name: Commit and push updated source.json
         run: |
