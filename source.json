@@ -61,6 +61,16 @@
       "versions": [
         {
           "version": "0.1.16",
+          "buildVersion": "34",
+          "date": "2026-11-28T15:59:13Z",
+          "localizedDescription": "## 小浣熊阅读 iPad 专属优化版（`v0.1.16-ipad.4`）\n\n基于开源项目 [Aminark/legado-ios](https://github.com/Aminark/legado-ios)（GPL-3.0）从源码云编译的未签名 arm64 `.ipa`（适用于 SideStore / AltStore / LiveContainer / TrollStore 自签安装）。\n\n### 本次改动摘要\n- **安全加固**：默认开启 HTTPS 证书校验（`ignoreCertificateErrors = false`），保持 0 扩展、0 额外 Entitlement、单一 App ID（`com.epiboly.legado`）。\n- **Android 兼容 WebDAV 备份与恢复**：兼容安卓 Legado `backupYYYY-MM-DD.zip`，支持坚果云 / InfiniCLOUD / 自定义地址，**密码强制加密存于 iOS Keychain**，附带同源重定向防护与 ZIP 边界校验。\n- **外接键盘翻页**：网文/TXT（分页与滚动）与 EPUB 阅读器支持 `←` / `→` / `↑` / `↓` / `Space` 翻页，不劫持输入框。\n- **EPUB 横屏双页**：通过 Readium 3.8 `EPUBPreferences` 支持「自动 / 单页 / 双页」排版（默认自动）。\n- **iPad 大屏适配**：iPadOS 16+ 原生 `NavigationSplitView` 侧边栏（iOS 15 回退 TabView）、自适应书架列数、可调 iPad 正文最大列宽（`600pt ~ 1000pt`）、显式支持分屏与四向旋转。",
+          "downloadURL": "https://github.com/haywoodw04-jpg/legado-ipad/releases/download/v0.1.16-ipad.4/legado-ipad-v0.1.16-ipad.4-unsigned.ipa",
+          "size": 16694957,
+          "minOSVersion": "15.0",
+          "sha256": "1a69725c49b4acc1f4beb56e4ce6457bc85eab920c4254b0a4dfba5dd3cedddb"
+        },
+        {
+          "version": "0.1.16",
           "buildVersion": "33",
           "date": "2026-11-28T12:02:47Z",
           "localizedDescription": "## 小浣熊阅读 iPad 专属优化版（`v0.1.16-ipad.3`）\n\n基于开源项目 [Aminark/legado-ios](https://github.com/Aminark/legado-ios)（GPL-3.0）从源码云编译的未签名 arm64 `.ipa`（适用于 SideStore / AltStore / LiveContainer / TrollStore 自签安装）。\n\n### 本次改动摘要\n- **安全加固**：默认开启 HTTPS 证书校验（`ignoreCertificateErrors = false`），保持 0 扩展、0 额外 Entitlement、单一 App ID（`com.epiboly.legado`）。\n- **Android 兼容 WebDAV 备份与恢复**：兼容安卓 Legado `backupYYYY-MM-DD.zip`，支持坚果云 / InfiniCLOUD / 自定义地址，**密码强制加密存于 iOS Keychain**，附带同源重定向防护与 ZIP 边界校验。\n- **外接键盘翻页**：网文/TXT（分页与滚动）与 EPUB 阅读器支持 `←` / `→` / `↑` / `↓` / `Space` 翻页，不劫持输入框。\n- **EPUB 横屏双页**：通过 Readium 3.8 `EPUBPreferences` 支持「自动 / 单页 / 双页」排版（默认自动）。\n- **iPad 大屏适配**：iPadOS 16+ 原生 `NavigationSplitView` 侧边栏（iOS 15 回退 TabView）、自适应书架列数、可调 iPad 正文最大列宽（`600pt ~ 1000pt`）、显式支持分屏与四向旋转。",
@@ -91,10 +101,10 @@
         }
       ],
       "version": "0.1.16",
-      "versionDate": "2026-11-28T12:02:47Z",
-      "versionDescription": "## 小浣熊阅读 iPad 专属优化版（`v0.1.16-ipad.3`）\n\n基于开源项目 [Aminark/legado-ios](https://github.com/Aminark/legado-ios)（GPL-3.0）从源码云编译的未签名 arm64 `.ipa`（适用于 SideStore / AltStore / LiveContainer / TrollStore 自签安装）。\n\n### 本次改动摘要\n- **安全加固**：默认开启 HTTPS 证书校验（`ignoreCertificateErrors = false`），保持 0 扩展、0 额外 Entitlement、单一 App ID（`com.epiboly.legado`）。\n- **Android 兼容 WebDAV 备份与恢复**：兼容安卓 Legado `backupYYYY-MM-DD.zip`，支持坚果云 / InfiniCLOUD / 自定义地址，**密码强制加密存于 iOS Keychain**，附带同源重定向防护与 ZIP 边界校验。\n- **外接键盘翻页**：网文/TXT（分页与滚动）与 EPUB 阅读器支持 `←` / `→` / `↑` / `↓` / `Space` 翻页，不劫持输入框。\n- **EPUB 横屏双页**：通过 Readium 3.8 `EPUBPreferences` 支持「自动 / 单页 / 双页」排版（默认自动）。\n- **iPad 大屏适配**：iPadOS 16+ 原生 `NavigationSplitView` 侧边栏（iOS 15 回退 TabView）、自适应书架列数、可调 iPad 正文最大列宽（`600pt ~ 1000pt`）、显式支持分屏与四向旋转。",
-      "downloadURL": "https://github.com/haywoodw04-jpg/legado-ipad/releases/download/v0.1.16-ipad.3/legado-ipad-v0.1.16-ipad.3-unsigned.ipa",
-      "size": 16694637,
+      "versionDate": "2026-11-28T15:59:13Z",
+      "versionDescription": "## 小浣熊阅读 iPad 专属优化版（`v0.1.16-ipad.4`）\n\n基于开源项目 [Aminark/legado-ios](https://github.com/Aminark/legado-ios)（GPL-3.0）从源码云编译的未签名 arm64 `.ipa`（适用于 SideStore / AltStore / LiveContainer / TrollStore 自签安装）。\n\n### 本次改动摘要\n- **安全加固**：默认开启 HTTPS 证书校验（`ignoreCertificateErrors = false`），保持 0 扩展、0 额外 Entitlement、单一 App ID（`com.epiboly.legado`）。\n- **Android 兼容 WebDAV 备份与恢复**：兼容安卓 Legado `backupYYYY-MM-DD.zip`，支持坚果云 / InfiniCLOUD / 自定义地址，**密码强制加密存于 iOS Keychain**，附带同源重定向防护与 ZIP 边界校验。\n- **外接键盘翻页**：网文/TXT（分页与滚动）与 EPUB 阅读器支持 `←` / `→` / `↑` / `↓` / `Space` 翻页，不劫持输入框。\n- **EPUB 横屏双页**：通过 Readium 3.8 `EPUBPreferences` 支持「自动 / 单页 / 双页」排版（默认自动）。\n- **iPad 大屏适配**：iPadOS 16+ 原生 `NavigationSplitView` 侧边栏（iOS 15 回退 TabView）、自适应书架列数、可调 iPad 正文最大列宽（`600pt ~ 1000pt`）、显式支持分屏与四向旋转。",
+      "downloadURL": "https://github.com/haywoodw04-jpg/legado-ipad/releases/download/v0.1.16-ipad.4/legado-ipad-v0.1.16-ipad.4-unsigned.ipa",
+      "size": 16694957,
       "appPermissions": {
         "entitlements": [],
         "privacy": {
